@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--Setting the width of the screen to be responsive based on the device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description content="Dehiwala Zoological Gardens">
+    <!--Linking css file-->
+    <link rel="stylesheet" href="CSS Files/normalize.css">
+    <link rel="stylesheet" href="CSS Files/StylingSheet.css">
+    <title>Dehiwala Zoological Gardens - Home Page </title>
+</head>
+<body>
+    <!--Opening the header of the body which will not be counted as one of the three sections in the homepage-->
+    <header>
+        <section>
+            <!--Setting a class "Main" to help style the main topic easier-->
+            <h1 class="Main">
+                DEHIWALA  ZOOLOGICAL  GARDENS
+            </h1>
+            <!--Creating a navigation link list which can later be styled in css to create a top navigation bar-->
+            <nav class="topnav">
+                <!--Active class will be used to style the currently active page in a distinct way.-->
+                <a href="index.html" class="active">Home</a>
+                <a href="TypesofAnimalsandPlants.html">Types of Animals and Plants</a>
+                <a href="Activities.html">Activities</a>
+                <a href="PurchaseandDonate.html">Purchase and Donate</a>
+                <a href="ContactUs.html">Contact Us</a>
+            </nav> 
+            <!--Below image was taken from https://www.livescience.com/27404-lion-facts.html-->
+            <img src="Images/Home Page/WEBP/Lion Image 1000px.webp" class="Responsive" alt="Lion">
+            <!--Above Responsive class is used to set image width to match the width of the screen.-->
+        </section>
+    </header>
+    <!--Opening the first section of the three section in the homepage-->
+    <!--Article is used instead of section tag so as to make the code easier to navigate-->
+    <article>
+        <section>
+            <h2>ABOUT US</h2>
+        </section>
+        <section>
+            <!--Setting a class "column" to the section so that this section and the img in the next section can be aligned side by side through css float and width-->
+            <section class="column">
+                <!--All information regarding Dehiwala zoo was taken from http://nationalzoo.gov.lk/zoo/ although some information was made up for the purposes of this assignment-->
+                <p>The Dehiwala National Zoo is one of the most well recognized  zoos. Often called Colombo Zoo, the Dehiwala Zoo is one of the oldest zoos in Asia. </p>
+                    <p>The Zoo has become famous not only because of all the exotic species of plants and animals it holds but also because of its lavished greenery. The Dehiwala Zoo has always promoted conservation of endangered species while maintaining cruel free conditions.</p>
+                    <p>Annually, over one and a half million people visit the Dehiwala Zoo. The Zoo has also been visited by over 2000 students from universities and schools for educational purposes in the last year.</p>
+                    <p class="beforevision">Currently the zoo is going through major redevelopment processes to create a better image in the eyes of the public and to create better living conditions for the animals and plants held in the zoo.</p>
+                    <br><br>
+                    <p> The Zoo currently houses over:</p>
+                    <br>
+                    <ul>
+                        <li>72 Species of Mammals</li>
+                        <li>65 Species of Birds</li>
+                        <li>31 Species of Reptiles</li>
+                        <li>89 Species of Fish</li>
+                        <li>3 Families of Amphibians</li>
+                        <li>30 Species of Butterflies</li>
+                    </ul>
+            </section>
+            <section class="column">
+                <!--Below image was a screenshot taken from the following youtube video - https://www.youtube.com/watch?v=W8hsNCeV2NU-->
+                <img src="Images/Home Page/WEBP/Zebra.webp" alt="Zebra" class="Responsive">
+                <br><br><br><br><br>
+            </section>
+        </section>
+        <br>
+        <section>
+            <!--Setting up classes "vm" and "vmc" to stylize the below content to make it appear better through css-->
+            <h3 class="vm">Vision:</h3>
+            <p class="vmc">To be one of the best zoological gardens in the world</p>
+            <h3 class="vm">Mission:</h3>
+            <p class="vmc">House and display a diversified healthy collection of wild animal populations, under utmost care, through a code of best practices, state of the art technology and expertise in par with modern zoo concepts.</p>
+            <br>
+        </section>
+    </article>
+    <!--Opening the second of three sections(Articles)-->
+    <article>
+        <section class="column">
+            <h2>Our Most Visited Attractions</h2>
+            <p>The Dehiwala Zoo hosts a wide variety of activities. Each of these activities is a special attraction which places awe upon witnesses. Visitors have ranked each activity from worst to best in the list below.</p>
+            <!--Creating an in paragraph link to the zoos activities page-->
+            <p>Further information about each of these activities can be found in our <a href="Activities.html">Activities Page.</a></p>
+            <p>Each attraction is special in its own right and will create memories which you will cherish for your entire life which will all be captured by the zoos cameramen.</p>  
+            <br><br>
+            <!--Ordered list containing a list of activities in the zoo-->
+                <ol>
+                    <li>Swimming with Tigers</li>
+                    <li>Meet the Pandas</li>
+                    <li>Mini Safari</li>
+                    <li>Snake Dancing</li>
+                    <li>Aquarium</li>
+                    <li>Sea Lion Show</li>
+                    <li>Elephant Dancing</li>
+                    <li>Bird Exhibit</li>
+                    <li>Butterfly Gardens</li>
+                    <li>Reptile House</li>
+                </ol>
+            <br><br><br>
+        </section>
+        <section class="column">
+            <!--Below image was taken from https://www.thesprucepets.com/harlequin-macaws-390836-->
+            <img src="Images/Home Page/WEBP/Macaw.webp" alt="Zebra" class="Responsive">
+        </section>
+        <!--Disclaimer class is used to style text distinctly-->
+        <section class="disclaimer">
+            <p>Each of these attractions are perfectly safe and will be monitored by trained <br>professionals. However we do urge all of you to stay within the given guidelines.</p>
+        </section>
+    </article>
+    <!--Opening the final article (main sections) in the homepage-->
+    <article>
+        <section class="column">
+            <h2>Upcoming...</h2>
+            <p>With the pace at which the world is changing it is difficult to keep up. The Zoo is currently world class. However, there is always room for more improvement which is why the Zoo has made a decision to go through a redevelopment.</p>
+            <p>The Dehiwala Zoo is currently going through some major revelopment programs to ensure that you and your loved ones get the best experience possible after the pandemic. The Zoo may be closed for a short period of time while the redevelopment is underway. However, it is important to remember that the redevelopment is done to help ensure that both you and the animals at the zoo have the most comfortable environment possible.</p>
+        </section>
+        <section class="column">
+            <!--Below image was taken from https://www.redballoon.com.au/product/broome-crocodile-feeding-tour-with-park-entry-and-transfers/BAAW001-M.html-->
+            <img src="Images/Home Page/WEBP/Crocodile.webp" alt="Crocodile Feeding" class="Responsive">
+        </section>
+        <section>
+            <p class="disclaimer">Feed the crocodile...Coming soon.</p>
+        </section>
+    </article>
+    <footer>
+        <!--Footer-->
+        <section>
+           <section class="column">
+            <!--Class set which is specific to the footer table to help style it-->
+            <table class="ftable">
+                <tr>
+                    <td>
+                        <section>
+                            <p>Vejith Lenora</p>
+                            <p>Phone Number - 011-2712751</p>
+                        </section>
+                    </td>
+                    <td>
+                        <section>
+                            <p>Below is a list of all the sources for images used in this page:</p>
+                            <ul>
+                                <li><a href="https://www.livescience.com/27404-lion-facts.html">Lion Image</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=W8hsNCeV2NU">Zebra Image</a></li>
+                                <li><a href="https://www.thesprucepets.com/harlequin-macaws-390836">Macaw Image</a></li>
+                                <li><a href="https://www.redballoon.com.au/product/broome-crocodile-feeding-tour-with-park-entry-and-transfers/BAAW001-M.html">Crocodile Image</a></li>
+                            </ul>
+                        </section>
+                    </td>
+                </tr>
+            </table>
+           </section>
+            <section class="column">
+                <!--Setting a google map location of the actual Dehiwala Zoological Gardens-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.120803439491!2d79.8744025!3d6.8569811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd90f5bffd93f59f!2sDehiwala%20Zoological%20Garden!5e0!3m2!1sen!2slk!4v1619518584318!5m2!1sen!2slk" loading="lazy" ></iframe>
+            </section>
+            <section>
+                <h3 class="disclaimer">Disclaimer</h3>
+                <!--disclaimert class is used to style the text similar but different from the disclaimer-->
+                <p class="disclaimert">This is not the actual website of Dehiwala Zoological Gardens rather a mockup created for the Asia Pacific Institute of Technologies first year software engineering degree programme. A link for the official Dehiwala Zoological Gardens website is given below.</p>
+                <!--Setting the link to the actual Dehiwala Zoological Gardens website-->
+                <a href="http://nationalzoo.gov.lk/zoo/">The Dehiwala Zoo main page</a>
+            </section>
+        </section>
+    </footer>    
+</body>
+</html>

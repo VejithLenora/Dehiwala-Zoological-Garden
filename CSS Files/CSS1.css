@@ -1,0 +1,148 @@
+.Responsive
+{
+    max-width: 90%;
+    align-content: center;
+}
+.topnav 
+{
+    background-color: white;
+    overflow: hidden;
+}
+.topnav a
+ {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover 
+{
+    background-color: rgba(43, 255, 0, 0.582);
+    color: black;
+}
+.topnav a.active
+ {
+    background-color: black;
+    color: white;
+  }
+body
+{
+    background-color: rgba(0, 0, 0, 0.904);
+}
+h1, h2, h3, p, li
+{
+    color: white;
+}
+header
+{
+    padding: 0em;
+    border-style: Solid;
+    border-width: 0.75em;
+    border-color: white;
+}
+.Main
+{
+    font-size: 2em;
+    padding-left: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+article
+{
+    border-style:solid;
+    border-left-width:0.75em;
+    border-right-width:0.75em;
+    border-bottom-width:0.75em;
+    border-color: white;
+    padding:0.7em;
+}
+.center
+{
+    text-align: center;
+}
+h2
+{
+    font-size:1.8em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;    
+}
+.description
+{
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.column {
+    float: left;
+    width: 50%;
+  }
+#tpic2:hover 
+  {
+      transform:scale(1.4);
+      align-content: center;
+  }
+@media screen and (max-width: 1255px) {
+    .column {
+      width: 100%;
+    }
+}
+#tpic
+{
+    border-style:solid;
+    border-width: 1rem;
+}
+#tpic2
+{
+    border-style:solid;
+    border-width: 1rem;
+}
+footer
+{
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.disclaimer
+{
+    font-size: 1em;
+}
+.disclaimert
+{
+    font-size: 0.8em;
+}
+a
+{
+    color:rgba(155, 253, 136, 0.534);
+}
+@media screen and (min-width: 900px) 
+{
+    .Responsive
+    {
+        max-width: 97%;
+        align-content: center;
+    }
+    #tpic
+    {
+        border-style:solid;
+        border-width: 1rem;  
+    }
+    .Main
+    {
+        font-size: 2.5em;
+        padding-left: 1em;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h2
+    {
+        font-size:2.3em;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: underline;    
+    }
+    .description
+    {
+        font-size: 1.7em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}

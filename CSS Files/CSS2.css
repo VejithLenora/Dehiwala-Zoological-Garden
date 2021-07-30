@@ -1,0 +1,115 @@
+.topnav 
+{
+    background-color: #9438024b;
+    overflow: hidden;
+}
+.center
+{
+    text-align:center;
+}
+.topnav a
+ {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover 
+{
+    background-color: black;
+    color: white;
+    transform:scale(1.5);
+}
+.topnav a.active
+ {
+    background-color: black;
+    color: white;
+}
+.Responsive
+{
+    max-width: 97%;
+    text-align:center;
+    border-style:solid;
+    border-width: 0.5em;
+}
+body
+{
+    color:black;
+    background-color: #ba4e0fd3;
+    font-family:monospace;
+}
+.Main
+{
+    font-size: 2.5em;
+    padding: 0.5em;
+    font-family:monospace;
+    text-decoration: underline;
+}
+header
+{
+    border-style:solid;
+    border-bottom-width: 0.25em;
+    border-top-width: 0.25em;
+    border-right-width: 0.5em;
+    border-left-width: 0.5em;
+    border-color:black
+}
+article
+{
+    border-left-style:solid;
+    border-bottom-style:solid;
+    border-right-style:solid;
+    border-top-style:solid;
+    border-top-width: 0.25em;
+    border-bottom-width: 0.25em;
+    border-left-width: 0.5em;
+    border-right-width: 0.5em;
+    border-color:black;
+    padding : 2em;
+}
+h2
+{
+    font-size: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    text-align:center;
+}
+.description
+{
+    font-size: 1.3em;
+}
+a
+{
+    color: rgb(128, 255, 0);
+}
+footer
+{
+    padding: 0.5em;
+}
+#blank
+{
+    color : #ba4e0fd3;
+}
+.link
+{
+    text-align: left;
+}
+@media screen and (min-width: 900px) 
+{
+    .Main
+    {
+        font-size:4em;
+    }
+    h2
+    {
+        font-size: 3em;
+    }
+    .column
+    {
+        float: left;
+        width: 50%;
+    }
+}
+

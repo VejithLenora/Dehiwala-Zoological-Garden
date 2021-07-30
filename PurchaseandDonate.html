@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <!--Setting the width of the screen to be responsive based on the device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description content="Dehiwala Zoological Gardens">
+    <!--Linking css file-->
+    <link rel="stylesheet" href="CSS Files/normalize.css">
+    <link rel="stylesheet" href="CSS Files/StylingSheet.css">
+    <title>Dehiwala Zoological Gardens - Purchase and Donate </title>
+</head>
+<body>
+    <header>
+        <section>
+            <!--Setting a class "Main" to help style the main topic easier-->
+            <h1 class="Main">
+                PURCHASE AND DONATE
+            </h1>
+            <!--Creating a navigation link list which can later be styled in css to create a top navigation bar-->
+            <nav class="topnav">
+                <a href="index.html">Home</a>
+                <a href="TypesofAnimalsandPlants.html">Types of Animals and Plants</a>
+                <a href="Activities.html">Activities</a>
+                <!--Active class will be used to style the currently active page in a distinct way.-->
+                <a href="PurchaseandDonate.html" class="active">Purchase and Donate</a>
+                <a href="ContactUs.html">Contact Us</a>
+            </nav> 
+        </section>
+    </header>
+    <article>
+        <section>
+            <h1>
+                Ticket Purchase
+            </h1>
+        </section>
+        <section>
+            <p class="TPN">*Please enter the details of each seperate product/product you want to purchase and press calculate to get a price estimation. After you recieve a price estimation you can add the product to the overall order. Note: You cannot enter any data on the overall order, you will have to add it through the customer information and ticket information.</p>
+        </section>
+        <section>
+            <!--Starting a media query to get information from customers-->
+            <form method="POST"  id="myForm">
+                <!--Post method is used to ensure user privacy-->
+                <section class="column">
+                    <fieldset>
+                        <!--This fieldset will collect information from the customers which will later be used in the ticket references-->
+                        <legend>Customer Information</legend>
+                        <label>Full Name: </label>
+                        <input type="text" id="FullName" >
+                        <br><br>
+                        <label>Email:</label>
+                        <input type="email" id="CustomerEmail">
+                        <br><br>
+                        <label>Contact Number:</label>
+                        <input type="text" id="CustomerNumber" >
+                    </fieldset>
+                    <fieldset>
+                        <!--Starting fieldset to collect ticket information from customers-->
+                        <legend>Ticket Information</legend>
+                        <!--COllecting pass information-->
+                        <Label>Pass Type: </Label><br><br>
+                        <input type="radio" id="Day Pass" name="PassType" value="DayPass" required>
+                        <label for="Day Pass">Day Pass</label><br>
+                        <input type="radio" id="Student Pass" name="PassType" value="StudentPass" required>
+                        <label for="Student Pass">Student Pass</label><br>
+                        <input type="radio" id="Foreigner Pass" name="PassType" value="ForeignerPass" required>
+                        <label for="Foreigner Pass">Foreigner Pass</label><br><br>
+                        <!--Collecting Number of each type of ticket-->
+                        <label>Number of tickets: </label><br><br>
+                        <label for="AdultTickets">Adult Tickets</label>
+                        <input type="number" id="AdultTickets" name="Number of tickets" min="0" value="0"><br>
+                        <label for="ChildrensTickets" >Childrens Tickets</label>
+                        <input type="number" id="ChildrensTickets" name="Number of tickets" min="0" value="0"><br><br>
+                        <!--Asking customers to fill a drop down selection where they can decide how long they want their ticket visit times to be-->
+                        <label for="TimeSelection">How long will your visit be? (Hours)</label>
+                        <Select id="TimeSelection">
+                            <option>3</option>
+                            <option>12</option>
+                            <option>24</option>
+                            <option>48</option>
+                        </Select><br><br>
+                        <!--Giving the customer the option of choosing some of the ticket add ons offered by dehiwala zoological gardens.-->
+                        <label>Add On:&nbsp;&nbsp;</label>
+                        <input type="checkbox" id="AnnualPass" name="AddOn">
+                        <label for="AnnualPass">Annual Pass</label>
+                        <input type="checkbox" id="FoodToken"  name="AddOn">
+                        <label for="FoodToken">Food Token</label><br><br>
+                        <!--Creating a read only input field to display the current value of the order as changes are made live-->
+                        <label for="LiveCurrentValueUpdate"> Current Item Value (LKR): </label>
+                        <input id="LiveCurrentValueUpdate" onkeydown="return false">
+                        <br>
+                        <label for="LiveOverallValueUpdate"> Overall Order Value With Item (LKR): </label>
+                        <input id="LiveOverallValueUpdate" onkeydown="return false">
+                        <br><br>
+                        <button type="Reset" value="Reset" id="RSB">Clear Fields</button>
+                        <button type="Button" id="Calculate" class="Calculate">Calculate Price</button>
+                        <button type="Button" id="ATC" class="ATC">Add To Cart</button>
+                        <br>
+                        <p class="TPN">*Click the above button when you are done</p>
+                    </fieldset>
+                </section>
+            </form>
+            <section>
+                <form method="POST">
+                    <fieldset>
+                        <legend>Overall Order</legend>
+                        <br>
+                        <label for="FinalOrderName">Name:</label>
+                        <input id="FinalOrderName" onkeydown="return false" required></input>
+                        <br>
+                        <br>
+                        <label>Email:</label>
+                        <input type="email" id="FinalCustomerEmail" onkeydown="return false" required>
+                        <br><br>
+                        <label>Contact Number:</label>
+                        <input type="text" id="FinalCustomerNumber" onkeydown="return false" required>
+                        <br><br>
+                        <label for="ADPasses">Adult Day Passes:</label>
+                        <input id="ADPasses" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="CDPasses">Child Day Passes:</label>
+                        <input id="CDPasses" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="ASPasses">Adult Student Passes:</label>
+                        <input id="ASPasses" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="CSPasses">Child Student Passes:</label>
+                        <input id="CSPasses" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="AFPasses">Adult Foreign Passes:</label>
+                        <input id="AFPasses" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="CFPasses">Child Foreign Passes:</label>
+                        <input id="CFPasses" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="3HTickets">3 Hour Extensions (Free):</label>
+                        <input id="3HTickets" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="12HTickets">12 Hour Extensions (250LKR):</label>
+                        <input id="12HTickets" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="24HTickets">24 Hour Extensions (500LKR):</label>
+                        <input id="24HTickets" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="48HTickets">48 Hour Extensions (1000LKR):</label>
+                        <input id="48HTickets" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="AnnualPasses">Annual Passes (5000LKR):</label>
+                        <input id="AnnualPasses" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="FoodTokenO">Food Tokens (500LKR):</label>
+                        <input id="FoodTokenO" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <label for="OverallOrderPrice">Price:</label>
+                        <input id="OverallOrderPrice" onkeydown="return false"></input>
+                        <br>
+                        <br>
+                        <button type="Reset" value="Reset" id="ClearBtn">Clear</button>
+                        <button type="submit" id="FSubmit">Place Order</button> 
+                        <button type="button" id="AddTF">Add to favourite</button> 
+                        <button type="button" id="AddFTC">Add favourite to cart</button>  
+                        <button type="button" id="CheckLoyalty">Check Loyalty</button>  
+                        <br>
+                        <p class="TPN">*If you are satisfied with your cart please click "Place Order" to proceed if not please press "Clear</p>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+    </article>
+    <article>
+        <section>
+            <h1>
+                Donations
+            </h1>
+        </section>
+        <section>
+            <p class="TPN">*All payments are completely safe, we appreciate each and every donation.</p>
+            <form method="POST">
+                <section class="column">
+                    <fieldset>
+                        <legend>Donation Information</legend>
+                        <label for="DASelection">How much would you like to donate? (LKR)</label>
+                            <Select id="DASelection">
+                                <option>100</option>
+                                <option>250</option>
+                                <option>500</option>
+                                <option>1000</option>
+                                <option>2500</option>
+                                <option>5000</option>
+                                <option>10000</option>
+                            </Select>
+                            <br>
+                            <br>
+                            <label for="DName">Name:</label>
+                            <Select id="Title">
+                                <option>Mr.</option>
+                                <option>Mrs.</option>
+                                <option>Miss.</option>
+                                <option>Dr.</option>
+                            </Select>
+                            <input id="DName" required></input>
+                            <br>
+                            <br>
+                            <label for="DAddress">Address:</label>
+                            <input id="DAddress" required></input>
+                    </fieldset>
+                </section>
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <label>Credit Card Number:</label>
+                    <p>
+                        <input id="CardNum1" required class="CNumIn"></input>
+                        -
+                        <input id="CardNum2" required class="CNumIn"></input>
+                        -
+                        <input id="CardNum3" required class="CNumIn"></input>
+                        -
+                        <input id="CardNum4" required class="CNumIn"></input>
+                    </p>
+                    <label >Expiry Date:</label><br>
+                    <p>
+                    <input id="EDateMM" required class="ExpiryD"></input>/<input id="EDateYY" class="ExpiryD" required></input>
+                    </p>
+                    <label for="CVV">Security Code(CVV):</label>
+                    <input id="CVV" required></input>
+                    <br>
+                    <br>
+                    <button type="reset" id="ClearD">Clear</button>
+                    <button type="submit" id="SubmitD">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </article>
+    <footer>
+        <!--Footer-->
+        <section>
+           <section class="column">
+            <!--Class set which is specific to the footer table to help style it-->
+            <table class="ftable">
+                <tr>
+                    <td>
+                        <section>
+                            <p>Vejith Lenora</p>
+                            <p>Phone Number - 011-2712751</p>
+                        </section>
+                    </td>
+                </tr>
+            </table>
+           </section>
+            <section class="column">
+                <!--Setting a google map location of the actual Dehiwala Zoological Gardens-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.120803439491!2d79.8744025!3d6.8569811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd90f5bffd93f59f!2sDehiwala%20Zoological%20Garden!5e0!3m2!1sen!2slk!4v1619518584318!5m2!1sen!2slk" loading="lazy" ></iframe>
+            </section>
+            <section>
+                <h3 class="disclaimer">Disclaimer</h3>
+                <!--disclaimert class is used to style the text similar but different from the disclaimer-->
+                <p class="disclaimert">This is not the actual website of Dehiwala Zoological Gardens rather a mockup created for the Asia Pacific Institute of Technologies first year software engineering degree programme. A link for the official Dehiwala Zoological Gardens website is given below.</p>
+                <!--Setting the link to the actual Dehiwala Zoological Gardens website-->
+                <a href="http://nationalzoo.gov.lk/zoo/">The Dehiwala Zoo main page</a>
+            </section>
+        </section>
+    </footer> 
+    <script src="JS/Main.js"></script>
+</body>
